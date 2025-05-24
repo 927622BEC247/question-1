@@ -11,7 +11,7 @@ export const useFetch = <T,>(url: string) => {
       try {
         setLoading(true);
         console.log('url ',getStocks);
-                const response = await fetch('http://20.244.56.144/evalution-service/stocks', {
+                const response = await fetch('http://20.244.56.144/evaluation-service/stocks', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ4MDY2NDA1LCJpYXQiOjE3NDgwNjYxMDUsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImYxZTM4NGUwLWVlMTUtNDE4YS1iOWM2LWExY2VkYmNkMDI5MSIsInN1YiI6InZ2ZW5uaWxhNjEwQGdtYWlsLmNvbSJ9LCJlbWFpbCI6InZ2ZW5uaWxhNjEwQGdtYWlsLmNvbSIsIm5hbWUiOiJ2ZW5uaWxhIHYiLCJyb2xsTm8iOiI5Mjc2MjJiZWMyNDciLCJhY2Nlc3NDb2RlIjoid2hlUVV5IiwiY2xpZW50SUQiOiJmMWUzODRlMC1lZTE1LTQxOGEtYjljNi1hMWNlZGJjZDAyOTEiLCJjbGllbnRTZWNyZXQiOiJhQlhCRWdzd1pNR0R0U0RjIn0.y3gA_IJR-yVIhzNjq0NOcxBUFdGQbbrlhMG5EAplrTw`,
